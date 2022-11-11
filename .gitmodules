@@ -1,0 +1,3 @@
+[submodule "itemService"]
+	path = itemService
+	url = git@github.com:zachhuang4026/itemService.git
