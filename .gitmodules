@@ -13,3 +13,6 @@
 [submodule "accountService"]
 	path = accountService
 	url = git@github.com:zachhuang4026/accountService.git
+[submodule "webService"]
+	path = webService
+	url = git@github.com:zachhuang4026/webService.git
