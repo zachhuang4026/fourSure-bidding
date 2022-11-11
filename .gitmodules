@@ -4,3 +4,6 @@
 [submodule "shoppingService"]
 	path = shoppingService
 	url = git@github.com:zachhuang4026/shoppingService.git
+[submodule "auctionService"]
+	path = auctionService
+	url = git@github.com:zachhuang4026/auctionService.git
