@@ -7,3 +7,9 @@
 [submodule "auctionService"]
 	path = auctionService
 	url = git@github.com:zachhuang4026/auctionService.git
+[submodule "notifyService"]
+	path = notifyService
+	url = git@github.com:zachhuang4026/notifyService.git
+[submodule "accountService"]
+	path = accountService
+	url = git@github.com:zachhuang4026/accountService.git
