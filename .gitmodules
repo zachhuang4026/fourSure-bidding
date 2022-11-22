@@ -16,3 +16,6 @@
 [submodule "webService"]
 	path = webService
 	url = git@github.com:zachhuang4026/webService.git
+[submodule "apiGateway"]
+	path = apiGateway
+	url = git@github.com:adam-lim1/apiGateway.git
