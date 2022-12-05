@@ -81,12 +81,12 @@ python3 db_setup.py
 python3 app.py
 ```
 
-### Run the RabbitMQ Container
+## Run the RabbitMQ Container
 ```shell script
 docker run -d --hostname ebay-rabbitmq --name ebayRabbitMQ --net ebay --ip 172.20.0.7 -p 15672:15672 -p 5672:5672 rabbitmq:3-management
 ```
 
-### Run the Shopping Service Container
+## Run the Shopping Service Container
 - Run the container
 ```shell script
 docker run --name Shopping -e POSTGRES_PASSWORD=mysecret -p 3306:3306 -p 5432:5432 --net ebay --ip 172.20.0.8 -d hannahchiu88/shopping
@@ -106,7 +106,7 @@ cd /src
 java RPCServer 172.20.0.7
 ```
 
-### Run the Notify Service container
+## Run the Notify Service container
 ```shell script
 docker run -it --name Notification --net ebay --ip 172.20.0.9 hannahchiu88/notification /bin/bash
 source venv/bin/activate
@@ -114,7 +114,7 @@ cd notifyService/src/
 python app.py
 ```
 
-### Run the Auction Service container
+## Run the Auction Service container
 - Create Auction DB
 ```shell script
 docker pull yichiehchen/auctionservicepostgres:latest
@@ -192,7 +192,7 @@ docker exec -it auctionService /bin/bash
 java -jar startEndAuctions-1.0.jar 172.20.0.11 172.20.0.7 172.20.0.3:80
 ```
 
-### Initial Auction data (Requires API Gateway and Item Service to be running)
+## Initial Auction data (Requires API Gateway and Item Service to be running)
 ```shell script
 docker exec -it apiGateway /bin/sh
 cd apiGateway
